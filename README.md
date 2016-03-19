@@ -5,7 +5,7 @@ A few view masks that might be useful in some situation
 </video>
 
 ## TODO
-* implement substraction mask  
+* implement subtraction mask  
 * implement intersection mask
 
 ## Asset info

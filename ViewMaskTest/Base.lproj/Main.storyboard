@@ -78,40 +78,40 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="tKj-Tu-EOH">
                                                 <rect key="frame" x="0.0" y="40" width="600" height="40"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahu-F9-8jX">
-                                                        <rect key="frame" x="0.0" y="0.0" width="85" height="40"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahu-F9-8jX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <state key="normal" title="Union"/>
                                                         <connections>
                                                             <action selector="applyUnionMask:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M4J-dh-dTX"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pnq-Ac-iil">
-                                                        <rect key="frame" x="85" y="0.0" width="187" height="40"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pnq-Ac-iil">
+                                                        <rect key="frame" x="87" y="0.0" width="175" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                        <state key="normal" title="Substraction"/>
+                                                        <state key="normal" title="Subtraction"/>
                                                         <connections>
-                                                            <action selector="applySubstractionMask:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mlA-7p-FGB"/>
+                                                            <action selector="applySubtractionMask:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zJQ-6V-1JE"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbh-8R-2r3">
-                                                        <rect key="frame" x="272" y="0.0" width="174" height="40"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbh-8R-2r3">
+                                                        <rect key="frame" x="262" y="0.0" width="179" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <state key="normal" title="Intersection"/>
                                                         <connections>
                                                             <action selector="applyIntersectionMask:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7qu-VK-D6v"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bU0-IR-uaw">
-                                                        <rect key="frame" x="446" y="0.0" width="77" height="40"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bU0-IR-uaw">
+                                                        <rect key="frame" x="441" y="0.0" width="80" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <state key="normal" title="XOR"/>
                                                         <connections>
                                                             <action selector="applyXORMask:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T8x-FG-UPS"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKz-0O-VpJ">
-                                                        <rect key="frame" x="523" y="0.0" width="77" height="40"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKz-0O-VpJ">
+                                                        <rect key="frame" x="521" y="0.0" width="79" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <state key="normal" title="None"/>
                                                         <connections>

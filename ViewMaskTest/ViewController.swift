@@ -84,9 +84,9 @@ class ViewController: UIViewController
         girlImageView.layer.mask = mask
     }
     
-    @IBAction func applySubstractionMask(sender: UIButton)
+    @IBAction func applySubtractionMask(sender: UIButton)
     {
-        print("substraction mask to be implemented")
+        print("subtraction mask to be implemented")
     }
     
     @IBAction func applyIntersectionMask(sender: UIButton)
