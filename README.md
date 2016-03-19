@@ -1,6 +1,8 @@
 # ViewMaskTest
 A few view masks that might be useful in some situation  
 
+![demo](https://curisious.com/wp-content/uploads/2016/03/ViewMaskTest.mov)
+
 <video preload controls> <source src="https://curisious.com/wp-content/uploads/2016/03/ViewMaskTest.mov">
 </video>
 
