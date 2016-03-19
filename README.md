@@ -1,12 +1,10 @@
 # ViewMaskTest
 A few view masks that might be useful in some situation  
 
-![demo](https://curisious.com/wp-content/uploads/2016/03/ViewMaskTest.mov)
-
-<video preload controls> <source src="https://curisious.com/wp-content/uploads/2016/03/ViewMaskTest.mov">
-</video>
+Unable to embed video, see details in my blog post(not ready yet).
 
 ## TODO
+* write blog post
 * implement subtraction mask  
 * implement intersection mask
 
