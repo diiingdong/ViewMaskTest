@@ -1,10 +1,11 @@
 # ViewMaskTest
 A few view masks that might be useful in some situation  
 
+![](https://github.com/diiingdong/ViewMaskTest/blob/master/ViewMaskTest.mov)
+
 Unable to embed video, see details in my blog post(not ready yet).
 
 ## TODO
-* write blog post
 * implement subtraction mask  
 * implement intersection mask
 
