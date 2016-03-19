@@ -1,7 +1,7 @@
 # ViewMaskTest
 A few view masks that might be useful in some situation  
 
-![](/blob/master/ViewMaskTest.mov)
+![](ViewMaskTest.mov)
 
 Unable to embed video, see details in my blog post(not ready yet).
 
