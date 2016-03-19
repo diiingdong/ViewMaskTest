@@ -1,9 +1,7 @@
 # ViewMaskTest
 A few view masks that might be useful in some situation  
 
-![](ViewMaskTest.mov)
-
-Unable to embed video, see details in my blog post(not ready yet).
+Unable to embed video, see animation demo in [ViewMaskTest.mov](/ViewMaskTest.mov).
 
 ## TODO
 * implement subtraction mask  
