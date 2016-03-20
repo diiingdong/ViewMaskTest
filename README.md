@@ -1,7 +1,9 @@
 # ViewMaskTest
 A few view masks that might be useful in some situation  
 
-Unable to embed video, see animation demo in [ViewMaskTest.mov](/ViewMaskTest.mov).
+[![](http://img.youtube.com/vi/VnRDeuDX-Rc/0.jpg)](https://www.youtube.com/watch?v=VnRDeuDX-Rc)
+
+If the above youtube video is not available, see animation demo in [ViewMaskTest.mov](/ViewMaskTest.mov).
 
 ## TODO
 * implement subtraction mask  
