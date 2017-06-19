@@ -10,47 +10,47 @@ class ViewController: UIViewController
     // MARK: - Computed Varibles
     var imageCenter: CGPoint!
     {
-        return CGPointMake(girlImageView.center.x - girlImageView.frame.origin.x, girlImageView.center.y - girlImageView.frame.origin.y)
+        return CGPoint(x: girlImageView.center.x - girlImageView.frame.origin.x, y: girlImageView.center.y - girlImageView.frame.origin.y)
     }
     
     var imageFrame: CGRect
     {
-        return CGRectMake(0, 0, girlImageView.frame.size.width, girlImageView.frame.size.height)
+        return CGRect(x: 0, y: 0, width: girlImageView.frame.size.width, height: girlImageView.frame.size.height)
     }
     
     var rectanglePath: UIBezierPath!
     {
-        return UIBezierPath(roundedRect: CGRectOffset(CGRectMake(imageCenter.x, imageCenter.y, 100, 100), -50, -80), cornerRadius: 10)
+        return UIBezierPath(roundedRect: CGRect(x: imageCenter.x, y: imageCenter.y, width: 100, height: 100).offsetBy(dx: -50, dy: -80), cornerRadius: 10)
     }
     
     var circlePath: UIBezierPath!
     {
-        return UIBezierPath(ovalInRect: CGRectOffset(CGRectMake(imageCenter.x, imageCenter.y, 100, 100), -50, -20))
+        return UIBezierPath(ovalIn: CGRect(x: imageCenter.x, y: imageCenter.y, width: 100, height: 100).offsetBy(dx: -50, dy: -20))
     }
     
     // MARK: - Constant
     let mask = CAShapeLayer()
     
     // MARK: - IBActions
-    @IBAction func applyRectangleMask(sender: UIButton)
+    @IBAction func applyRectangleMask(_ sender: UIButton)
     {
-        mask.path = rectanglePath.CGPath
+        mask.path = rectanglePath.cgPath
         
         girlImageView.layer.mask = mask
     }
     
-    @IBAction func applyCircleleMask(sender: UIButton)
+    @IBAction func applyCircleleMask(_ sender: UIButton)
     {
-        mask.path = circlePath.CGPath
+        mask.path = circlePath.cgPath
         
         girlImageView.layer.mask = mask
     }
     
-    @IBAction func applyRectangleReversedMask(sender: UIButton)
+    @IBAction func applyRectangleReversedMask(_ sender: UIButton)
     {
-        let reversedRectangle = CGPathCreateMutable()
+        let reversedRectangle = CGMutablePath()
         
-        CGPathAddPath(reversedRectangle, nil, rectanglePath.CGPath)
+        CGPathAddPath(reversedRectangle, nil, rectanglePath.cgPath)
         CGPathAddRect(reversedRectangle, nil, imageFrame)
         
         mask.path = reversedRectangle
@@ -59,11 +59,11 @@ class ViewController: UIViewController
         girlImageView.layer.mask = mask
     }
     
-    @IBAction func applyCircleReversedMask(sender: UIButton)
+    @IBAction func applyCircleReversedMask(_ sender: UIButton)
     {
-        let reversedCircle = CGPathCreateMutable()
+        let reversedCircle = CGMutablePath()
         
-        CGPathAddPath(reversedCircle, nil, circlePath.CGPath)
+        CGPathAddPath(reversedCircle, nil, circlePath.cgPath)
         CGPathAddRect(reversedCircle, nil, imageFrame)
         
         mask.path = reversedCircle
@@ -72,11 +72,11 @@ class ViewController: UIViewController
         girlImageView.layer.mask = mask
     }
     
-    @IBAction func applyUnionMask(sender: UIButton)
+    @IBAction func applyUnionMask(_ sender: UIButton)
     {
-        let unionPath = CGPathCreateMutable()
-        CGPathAddPath(unionPath, nil, circlePath.CGPath)
-        CGPathAddPath(unionPath, nil, rectanglePath.CGPath)
+        let unionPath = CGMutablePath()
+        CGPathAddPath(unionPath, nil, circlePath.cgPath)
+        CGPathAddPath(unionPath, nil, rectanglePath.cgPath)
         
         mask.path = unionPath
         mask.fillRule = kCAFillRuleNonZero
@@ -84,21 +84,21 @@ class ViewController: UIViewController
         girlImageView.layer.mask = mask
     }
     
-    @IBAction func applySubtractionMask(sender: UIButton)
+    @IBAction func applySubtractionMask(_ sender: UIButton)
     {
         print("subtraction mask to be implemented")
     }
     
-    @IBAction func applyIntersectionMask(sender: UIButton)
+    @IBAction func applyIntersectionMask(_ sender: UIButton)
     {
         print("intersection mask to be implemented")
     }
     
-    @IBAction func applyXORMask(sender: UIButton)
+    @IBAction func applyXORMask(_ sender: UIButton)
     {
-        let xorPath = CGPathCreateMutable()
-        CGPathAddPath(xorPath, nil, circlePath.CGPath)
-        CGPathAddPath(xorPath, nil, rectanglePath.CGPath)
+        let xorPath = CGMutablePath()
+        CGPathAddPath(xorPath, nil, circlePath.cgPath)
+        CGPathAddPath(xorPath, nil, rectanglePath.cgPath)
         
         mask.path = xorPath
         mask.fillRule = kCAFillRuleEvenOdd
@@ -106,7 +106,7 @@ class ViewController: UIViewController
         girlImageView.layer.mask = mask
     }
     
-    @IBAction func removeMask(sender: UIButton)
+    @IBAction func removeMask(_ sender: UIButton)
     {
         girlImageView.layer.mask = nil
     }
@@ -117,7 +117,7 @@ class ViewController: UIViewController
         super.viewDidLoad()
     }
     
-    override func didRotateFromInterfaceOrientation(fromInterfaceOrientation: UIInterfaceOrientation)
+    override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation)
     {
         girlImageView.layer.mask = nil
     }
