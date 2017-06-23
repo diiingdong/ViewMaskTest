@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F7895781EFCE78700FBABAD /* UIImage+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7895771EFCE78700FBABAD /* UIImage+Extention.swift */; };
 		9F9CCDF71C9C413B0011C6E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9CCDF61C9C413B0011C6E0 /* AppDelegate.swift */; };
 		9F9CCDF91C9C413B0011C6E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9CCDF81C9C413B0011C6E0 /* ViewController.swift */; };
 		9F9CCDFC1C9C413B0011C6E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F9CCDFA1C9C413B0011C6E0 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F7895771EFCE78700FBABAD /* UIImage+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extention.swift"; sourceTree = "<group>"; };
 		9F9CCDF31C9C413B0011C6E0 /* ViewMaskTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewMaskTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9CCDF61C9C413B0011C6E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F9CCDF81C9C413B0011C6E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				9F9CCDF61C9C413B0011C6E0 /* AppDelegate.swift */,
 				9F9CCDF81C9C413B0011C6E0 /* ViewController.swift */,
+				9F7895771EFCE78700FBABAD /* UIImage+Extention.swift */,
 				9F9CCDFA1C9C413B0011C6E0 /* Main.storyboard */,
 				9F9CCDFD1C9C413B0011C6E0 /* Assets.xcassets */,
 				9F9CCDFF1C9C413B0011C6E0 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7895781EFCE78700FBABAD /* UIImage+Extention.swift in Sources */,
 				9F9CCDF91C9C413B0011C6E0 /* ViewController.swift in Sources */,
 				9F9CCDF71C9C413B0011C6E0 /* AppDelegate.swift in Sources */,
 			);
